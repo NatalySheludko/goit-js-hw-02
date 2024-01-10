@@ -1,32 +1,32 @@
 'use strict';
 
 function getShippingCost(country) {
-  let deliveryPriceToChina = 100;
-  let deliveryPriceToChile = 250;
-  let deliveryPriceToAustralia = 170;
-  let deliveryPriceToJamaica = 120;
+  const deliveryPriceToChina = 100;
+  const deliveryPriceToChile = 250;
+  const deliveryPriceToAustralia = 170;
+  const deliveryPriceToJamaica = 120;
 
   switch (country) {
     case 'China':
-      return `Shipping to ${country} will cost ${deliveryPriceToChina} credits`;
-      break;
+      return `Shipping to ${country} will cost 100 credits`;
+
     case 'Chile':
-      return `Shipping to ${country} will cost ${deliveryPriceToChile} credits`;
-      break;
+      return `Shipping to ${country} will cost 250 credits`;
+
     case 'Australia':
-      return `Shipping to ${country} will cost ${deliveryPriceToAustralia} credits`;
-      break;
+      return `Shipping to ${country} will cost 170 credits`;
+
     case 'Jamaica':
-      return `Shipping to ${country} will cost ${deliveryPriceToJamaica} credits`;
-      break;
+      return `Shipping to ${country} will cost 120 credits`;
+
     default:
       return 'Sorry, there is no delivery to your country';
   }
 }
 
-console.log(getShippingCost('Australia')); // "Shipping to Australia will cost 170 credits"
-console.log(getShippingCost('Germany')); // "Sorry, there is no delivery to your country"
-console.log(getShippingCost('China')); // "Shipping to China will cost 100 credits"
-console.log(getShippingCost('Chile')); // "Shipping to Chile will cost 250 credits"
-console.log(getShippingCost('Jamaica')); // "Shipping to Jamaica will cost 120 credits"
-console.log(getShippingCost('Sweden')); // "Sorry, there is no delivery to your country"
+console.log(getShippingCost('Australia'));
+console.log(getShippingCost('Germany'));
+console.log(getShippingCost('China'));
+console.log(getShippingCost('Chile'));
+console.log(getShippingCost('Jamaica'));
+console.log(getShippingCost('Sweden'));
